@@ -4,11 +4,7 @@
 
 ## Description
 
-Decode morse code using ruby to find a treasure chest.
-
-## ScreenShot
-
-![image](https://user-images.githubusercontent.com/74814780/150293889-0e92d6e1-fc7c-4b6d-bd3c-7e65788d83c0.png)
+Created enumerable method and used inside of the class.
 
 ## Built With
 
