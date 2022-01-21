@@ -8,8 +8,10 @@ class MyList
   end
 
   def each
-    (0...@list.length).each do |i|
-      yield @list[i]
+    i = @list.length
+    while i >= 0
+      @list[i]
+      i -= 1
     end
   end
 end
