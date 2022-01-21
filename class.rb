@@ -1,21 +1,23 @@
-class MyList
-  include MyEnumerable
+require_relative './enumerable'
 
-  def initialize(*List)
-    @list = list
-  end
+# class MyList
+#   include MyEnumerable
 
-  def each
-    (0...@list.length).each do |i|
-      yield @list[i]
-    end
-  end
-end
+#   def initialize(*list)
+#     @list = list
+#   end
 
-list = MyList.new(1, 2, 3, 4)
+#   def each
+#     (0...@list.length).each do |i|
+#       yield @list[i]
+#     end
+#   end
+# end
 
-puts(list.all_e? { |e| e < 5})
-puts(list.all_e? { |e| e > 5})
-puts(list.all_e? { |e| e == 2})
-puts(list.all_e? { |e| e == 5})
-puts(list.filter_e?(&:even?)
+# list = MyList.new(1, 2, 3, 4)
+
+# puts(list.all_e? { |e| e < 5})
+# puts(list.all_e? { |e| e > 5})
+# puts(list.all_e? { |e| e == 2})
+# puts(list.all_e? { |e| e == 5})
+# puts(list.filter_e?(&:even?))
